@@ -1,0 +1,82 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    gap: 1rem;
+    background: #1e1e1e;
+}
+
+.editorPane {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.tabContainer {
+    display: flex;
+    background: #252525;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.tab {
+    padding: 0.5rem 1rem;
+    background: #333;
+    border: none;
+    border-radius: 4px;
+    color: #888;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tab.active {
+    background: #4ecdc4;
+    color: white;
+}
+
+.editorContainer {
+    flex: 1;
+    overflow: hidden;
+}
+
+.previewPane {
+    background: #252525;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.previewFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: white;
+}
+
+.actionButtons {
+    margin-left: auto;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.actionButton {
+    padding: 0.5rem 1rem;
+    background: #4ecdc4;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.saveStatus {
+    color: #4ecdc4;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
